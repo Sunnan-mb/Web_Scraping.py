@@ -16,7 +16,7 @@ def select_folder():
 def confirm_and_scrape():
     if folder_path:
         confirm_label.config(text="Scraping and saving...")
-        save_path = folder_path + f"/travel_books{datetime.date.today().strftime('%Y-%m-%d')}.csv"
+        save_path = folder_path + f"/travel books {datetime.date.today().strftime('%Y-%m-%d')}.csv"
         wb(save_path)
         status_label.config(text="Books scraped and saved successfully!")
     else:
